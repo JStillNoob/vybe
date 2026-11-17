@@ -7,8 +7,8 @@ describe('BrandLogo', () => {
     const wrapper = mount(BrandLogo)
 
     expect(wrapper.find('svg[aria-hidden="true"]').exists()).toBe(true)
-    expect(wrapper.text()).toContain('LINK')
-    expect(wrapper.text()).toContain('it')
+    expect(wrapper.text()).toContain('VY')
+    expect(wrapper.text()).toContain('BE')
     expect(wrapper.text()).toContain('Tap. Link. Connect.')
   })
 })

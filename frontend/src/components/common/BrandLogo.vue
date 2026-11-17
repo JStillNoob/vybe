@@ -57,9 +57,9 @@ withDefaults(defineProps<Props>(), {
         />
       </svg>
 
-      <!-- Heavy "LINK" + Light "it" Wordmark -->
+      <!-- Heavy "VY" + Light "BE" Wordmark -->
       <span class="text-2xl tracking-tight text-text leading-none select-none">
-        <strong class="font-black">LINK</strong><span class="font-light">it</span>
+        <strong class="font-black">VY</strong><span class="font-light">BE</span>
       </span>
     </div>
 

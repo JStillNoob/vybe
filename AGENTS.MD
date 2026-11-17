@@ -1,4 +1,4 @@
-# LINKit – Agent Guide
+# VYBE – Agent Guide
 
 Product: mobile-first digital identity / smart card platform. The profile is the product; NFC, QR and URL are access methods.
 Stack: Vue 3 + TS + Vite + Pinia + Tailwind (frontend/), Laravel + Sanctum (backend/), Supabase Postgres + Storage.

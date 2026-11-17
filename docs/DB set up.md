@@ -1,5 +1,5 @@
-# LINKit — Database Setup & Implementation Plan
-**Platform:** LINKit (Mobile-First Personal Digital Business Card Platform)  
+# VYBE — Database Setup & Implementation Plan
+**Platform:** VYBE (Mobile-First Personal Digital Business Card Platform)  
 **Database Engine:** Supabase PostgreSQL  
 **Object Storage:** Supabase Storage  
 **Backend Framework:** Laravel REST API (PHP 8.3)  
@@ -9,7 +9,7 @@
 
 ## 1. Overview & Architecture Strategy
 
-LINKit requires a resilient, relational database optimized for:
+VYBE requires a resilient, relational database optimized for:
 1. **Ultra-fast read queries:** When an NFC card is tapped or a QR code is scanned, the public profile (`/c/{slug}`) must resolve in under 50ms.
 2. **Strict data integrity:** Relationships between Users, Profiles, Links, and Analytics must support cascading deletes and transactional updates (e.g., link reordering).
 3. **GDPR / Privacy Compliance:** Anonymized IP hashing for analytics collection without storing raw PII of profile visitors.
@@ -48,7 +48,7 @@ During the technical audit, it was identified that `pdo_pgsql` is disabled in yo
 
 1. **Create Supabase Project:**
    - Log in to [Supabase](https://supabase.com).
-   - Create a new project (e.g., `linkit-production` or `linkit-dev`).
+   - Create a new project (e.g., `vybe-production` or `vybe-dev`).
    - Select the region closest to your target audience.
    - Securely save the generated **Database Password**.
 
@@ -109,7 +109,7 @@ AWS_USE_PATH_STYLE_ENDPOINT=true
 
 ## 3. Database Schema Specification
 
-Below is the database schema designed specifically for LINKit.
+Below is the database schema designed specifically for VYBE.
 
 ### Table 1: `users`
 Managed by Laravel authentication. Stores account credentials and platform role.
@@ -138,7 +138,7 @@ Managed by Laravel Sanctum. Holds API Bearer tokens for authenticated frontend s
 The profile is the product. Stores personal and professional digital business card identities accessed via NFC, QR, and URL.
 * `id` (UUID, Primary Key, default `gen_random_uuid()`)
 * `user_id` (UUID, Foreign Key → `users.id` ON DELETE CASCADE)
-* `slug` (VARCHAR 100, UNIQUE, NOT NULL) — *Indexed; used in NFC taps & QR URLs: `linkit.id/c/{slug}`*
+* `slug` (VARCHAR 100, UNIQUE, NOT NULL) — *Indexed; used in NFC taps & QR URLs: `vybe.id/c/{slug}`*
 * `title` (VARCHAR 100, NOT NULL, e.g., "Main Profile", "Consulting")
 * `first_name` (VARCHAR 100, NOT NULL)
 * `last_name` (VARCHAR 100, NOT NULL)

@@ -1,11 +1,11 @@
 import { test, expect } from '@playwright/test'
 
 test.describe('Profile Showcase and Theming', () => {
-  test('renders LINKit brand and profile card correctly', async ({ page }) => {
+  test('renders VYBE brand and profile card correctly', async ({ page }) => {
     await page.goto('/')
 
     // Check brand header
-    await expect(page.locator('header')).toContainText('LINK')
+    await expect(page.locator('header')).toContainText('VYBE')
     await expect(page.locator('header')).toContainText('Tap. Link. Connect.')
 
     // Check profile info

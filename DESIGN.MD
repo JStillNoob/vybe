@@ -1,4 +1,4 @@
-# LINKit – DESIGN.md
+# VYBE – DESIGN.md
 
 Reference image: docs/design reference/profile_Showcase.png (source of truth for look and layout)
 Product feel: monochrome, minimal, premium, friendly. Black and white with soft grays.
@@ -6,7 +6,7 @@ Tagline: Tap. Link. Connect.
 Core idea: the profile is the product. NFC, QR and URL are just ways in.
 
 ## Brand
-- Wordmark: "LINK" in heavy weight + "it" in light weight, with a phone + NFC waves icon.
+- Wordmark: "VYBE" ("VY" heavy weight + "BE" light weight), with a phone + NFC waves icon.
 - Tagline set in wide letter-spacing, light weight.
 - NFC cards: one white, one black, same wordmark and NFC mark.
 

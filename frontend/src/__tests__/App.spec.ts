@@ -39,7 +39,7 @@ describe('App and Router', () => {
     expect(wrapper.find('aside[aria-label="Theme selector and preview controls"]').exists()).toBe(
       true,
     )
-    expect(wrapper.text()).toContain('LINK')
+    expect(wrapper.text()).toContain('VYBE')
   })
 
   it('renders real profile route /:username directly', async () => {

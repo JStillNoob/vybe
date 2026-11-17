@@ -37,7 +37,7 @@ import ProfileCard from '@/components/profile/ProfileCard.vue'
     <footer
       class="w-full max-w-xl mx-auto text-center mt-8 pt-4 border-t border-line text-xs text-muted"
     >
-      <p>LINKit digital identity platform. The profile is the product.</p>
+      <p>VYBE digital identity platform. The profile is the product.</p>
     </footer>
   </div>
 </template>

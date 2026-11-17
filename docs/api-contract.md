@@ -1,4 +1,4 @@
-# LINKit — API Contract (`docs/api-contract.md`)
+# VYBE — API Contract (`docs/api-contract.md`)
 **Version:** 1.0 (MVP)  
 **Base URL:** `/api/v1`  
 **Authentication:** Laravel Sanctum (`Authorization: Bearer <token>`)  
@@ -97,7 +97,7 @@
 
 ## 3. Public Profile Endpoints (No Auth Required)
 
-Used by NFC card taps, QR scans, and public web profile visitors (`https://linkit.id/c/{slug}`).
+Used by NFC card taps, QR scans, and public web profile visitors (`https://vybe.id/c/{slug}`).
 
 ### 3.1 Get Public Profile
 `GET /api/v1/public/profiles/{slug}`
@@ -113,7 +113,7 @@ Used by NFC card taps, QR scans, and public web profile visitors (`https://linki
       "last_name": "Mercer",
       "prefix": "Dr.",
       "headline": "Lead Software Architect",
-      "company": "LINKit Technologies",
+      "company": "VYBE Technologies",
       "department": "Engineering",
       "bio": "Building next-generation digital identity solutions.",
       "avatar_url": "https://[supabase-storage]/avatars/alex.jpg",
@@ -183,7 +183,7 @@ Used by NFC card taps, QR scans, and public web profile visitors (`https://linki
     "last_name": "Mercer",
     "prefix": "Dr.",
     "headline": "VP of Architecture",
-    "company": "LINKit Corp",
+    "company": "VYBE Corp",
     "department": "Platform",
     "bio": "Updated bio text...",
     "theme": "dark",
